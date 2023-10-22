@@ -1,0 +1,20 @@
+\chapter{Data Structure}
+
+\section{RMQ}
+\inputminted{c++}{301-rmq.cpp}
+
+\section{Link-Cut Tree}
+\inputminted{c++}{302-link-cut-tree.cpp}
+
+\section{KD Tree}
+Find the $k$-th closest/farthest point in $O(kn^{1-\frac{1}{k}})$.
+
+Usage:
+\begin{inparaenum}
+    \item Store the data in \texttt{p[]}.
+    \item Execute \texttt{init}.
+    \item Execute \texttt{min\_kth} or \texttt{max\_kth} for queries (k is 1-based).
+\end{inparaenum}
+
+Note: Switch to the commented code for Manhattan distance.
+\inputminted{c++}{303-kd-tree.cpp}

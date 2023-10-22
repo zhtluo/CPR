@@ -1,0 +1,45 @@
+\RequirePackage[OT1]{fontenc}
+\documentclass[10pt, oneside]{book}
+
+\input{100-package}
+
+\title{Competitive Programmer's Reference}
+\author{Zhongtang Luo}
+\date{\today}
+
+\begin{document}
+    % Title page
+    \makeatletter
+    \begin{titlepage}
+        {
+            \centering
+            \vspace*{6cm}
+            {\huge\bfseries \@title \par}
+            \vspace{1.5cm}
+            {\Large \@author \par}
+            \vspace{1.5cm}
+            {\Large \@date \par}
+        }
+        \vspace{1.5cm}
+        \noindent\rule{\textwidth}{1pt} \par
+        \vspace{1.5cm}
+        \input{LICENSE}
+    \end{titlepage}
+    \makeatother
+
+    \begingroup
+    % Stop chapters from starting a new page
+    \let\clearpage\relax
+    \let\cleardoublepage\relax
+    
+    \begin{multicols}{2}
+        \tableofcontents
+
+        \input{200-environment}
+        \input{300-data-structure}
+        \input{400-geometry}
+    \end{multicols}
+    
+    \endgroup
+
+\end{document}

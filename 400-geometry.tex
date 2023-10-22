@@ -1,0 +1,33 @@
+\chapter{Geometry}
+\inputminted{c++}{401-geometry.cpp}
+
+\section{2D-Geometry}
+\begin{compactenum}
+    \item \texttt{point::rot90}: Counter-clockwise rotation.
+    \item \texttt{line\_circle\_intersect}: Ordered w.r.t. the direction of $a$.
+    \item \texttt{circle\_intersect}: Counter-clockwise w.r.t. $O_a$.
+    \item \texttt{tangent}: Counter-clockwise w.r.t. $a$.
+    \item \texttt{extangent}: Counter-clockwise w.r.t. $O_a$.
+    \item \texttt{intangent}: Counter-clockwise w.r.t. $O_a$.
+\end{compactenum}
+\inputminted{c++}{410-2d-geometry.cpp}
+
+\subsection{Triangle Center}
+\inputminted{c++}{413-triangle-center.cpp}
+
+\subsection{Fermat Point}
+Find a point $P$ that minimizes $|PA|+|PB|+|PC|$.
+\inputminted{c++}{414-fermat-point.cpp}
+
+\subsection{Convex Hull}
+Counter-clockwise, starting with the smallest point and with the minimum number of points. Modify \texttt{!= -s} to \texttt{== s} in \texttt{turn} to preserve all points on the hull.
+
+\texttt{convex\_tan} finds the covering \texttt{[s..t]} of a certain point. 
+\inputminted{c++}{411-convex-hull.cpp}
+
+\subsection{Half-Plane Intersection}
+\begin{compactenum}
+\item \texttt{cut}: Online in $O(n^2)$.
+\item \texttt{half\_plane\_intersect}: Offline in $O(m\log m)$.
+\end{compactenum}
+\inputminted{c++}{412-half-plane-intersection.cpp}

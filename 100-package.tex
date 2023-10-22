@@ -1,0 +1,40 @@
+% Page
+\usepackage[left=1.5cm, right=1.0cm, top=1.5cm, bottom=1.0cm]{geometry}
+\usepackage{multicol}
+\usepackage{paralist}
+
+% Font
+\usepackage{unicode-math}
+\setromanfont{TeX Gyre Termes}
+\setsansfont{TeX Gyre Heros}
+\setmonofont{TeX Gyre Cursor}[Ligatures=NoCommon]
+\setmathfont{TeX Gyre Termes Math}
+
+% Header
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\rhead{Page \thepage}
+\lhead{Competitive Programmer's Reference}
+\setlength{\headsep}{0.1cm}
+\setlength{\columnsep}{16pt}
+
+% Title
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\normalfont\Large\bfseries}{\thechapter}{1em}{}
+\titlespacing{\chapter}{0pt}{0pt}{0pt}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsection}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{0pt}{0pt}{0pt}
+\titlespacing{\paragraph}{0pt}{0pt}{10pt}
+\titlespacing{\subparagraph}{0pt}{0pt}{10pt}
+
+% Linter
+\usepackage{minted}
+\setminted{
+    breaklines,
+    frame=single,
+	numbers=left,
+	numbersep=3.5pt,
+	fontsize=\footnotesize,
+    fontseries=b,
+}
