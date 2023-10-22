@@ -38,3 +38,7 @@
 	fontsize=\footnotesize,
     fontseries=b,
 }
+\makeatletter
+\CatchFileDef{\minted@PYGdef@reference}{101-reference-style}{\catcode`@=11\catcode`\%=14\catcode``=12\endlinechar=-1}
+\makeatother
+\usemintedstyle{xcode}

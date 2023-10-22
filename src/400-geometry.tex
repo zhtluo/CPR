@@ -22,12 +22,12 @@ Find a point $P$ that minimizes $|PA|+|PB|+|PC|$.
 \subsection{Convex Hull}
 Counter-clockwise, starting with the smallest point and with the minimum number of points. Modify \texttt{!= -s} to \texttt{== s} in \texttt{turn} to preserve all points on the hull.
 
-\texttt{convex\_tan} finds the covering \texttt{[s..t]} of a certain point. 
+\texttt{convex\_tan} finds the covering \texttt{[s..t]} of a certain point.
 \inputminted{c++}{411-convex-hull.cpp}
 
 \subsection{Half-Plane Intersection}
 \begin{compactenum}
-\item \texttt{cut}: Online in $O(n^2)$.
-\item \texttt{half\_plane\_intersect}: Offline in $O(m\log m)$.
+    \item \texttt{cut}: Online in $O(n^2)$.
+    \item \texttt{half\_plane\_intersect}: Offline in $O(m\log m)$.
 \end{compactenum}
 \inputminted{c++}{412-half-plane-intersection.cpp}
